@@ -21,18 +21,32 @@
             font-size: 48px; /* Large font size */
             font-weight: bold; /* Bold font weight for prominence */
             line-height: 1.2; /* Adjust line height for better readability */
-            color: #233d3d; /* A distinct color, can be adjusted to match the company's theme */
+            color: #223c3c; /* A distinct color, can be adjusted to match the company's theme */
             text-transform: uppercase; /* Optional: Makes the text uppercase for more impact */
             margin-bottom: 20px; /* Adds some space below the header */
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
         }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            height: 60px; /* Adjust based on your logo size */
+            width: auto; /* Maintain aspect ratio */
+        }
         body {
             background-color: rgb(43, 202, 54);
         }
-	
+	    p {
+		color: blue;
+		word-wrap: break-word;
+	    }
     </style>
-<body>
-    <h1 class="h1-company-name ">GreenStride Solutions</h1>
-    <img src="Company-logo.png" alt="Company Logo" class="logo">
-</body>
+<div class="header">
+    <h1 class="h1-company-name">GreenStride Solutions</h1>
+    <img src="path/to/logo.png" alt="Company Logo" class="logo">
+</div>
 </html>
