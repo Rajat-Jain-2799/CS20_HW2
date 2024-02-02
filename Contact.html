@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenStride Solutions | Contact</title>
+    <style>
+        body { background-color: #e8f5e9; } /* Soft green background */
+        .gradient-background { background: linear-gradient(to right, #ff7e5f, #feb47b); }
+        .flexbox-centering { display: flex; justify-content: center; align-items: center; height: 100px; }
+        .box-shadow { box-shadow: 0 4px 8px rgba(79, 11, 226, 0.1); }
+        .text-shadow { text-shadow: 2px 2px 4px #dd0505; }
+        .transition { transition: all 0.3s ease-in-out; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="box-shadow">
+        <h1 style="text-shadow: 2px 2px 4px #dd0505;">Contact Us</h1>
     </header>
-    <main>
+    <main class="flexbox-centering gradient-background" style="padding: 20px;">
         <section>
-            <h2>Get in Touch</h2>
-            <form>
+            <form class="transition">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br>
                 <label for="email">Email:</label><br>
@@ -28,11 +28,8 @@
                 <textarea id="message" name="message" rows="4" required></textarea><br>
                 <input type="submit" value="Submit">
             </form>
-            <p>Email us at contact@greenstridesolutions.com or follow us on our social media.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 GreenStride Solutions</p>
-    </footer>
 </body>
 </html>
+
