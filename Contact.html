@@ -10,6 +10,9 @@
             margin: 0; /* Reset default margin */
             background-color: rgb(43, 202, 54); /* Background color */
             background-image: url('background-img.avif');
+            background-size: cover; /* Ensure the image covers the full background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
         }
@@ -57,7 +60,7 @@
     <header class="box-shadow">
         <h1 style="text-shadow:2px 2px 4px #56CCF2;">Contact Us</h1>
     </header>
-    <main class="gradient-background" style="padding: 20px;">
+    <main style="padding: 20px;">
         <section>
             <form class="transition">
                 <label for="name">Name:</label><br>
@@ -70,10 +73,6 @@
             </form>
         </section>
     </main>
-    
-    <div>
-        <img src="Company-logo2.png" alt="Company Logo" class="centered-container box-shadow">
-    </div>
 </body>
 </html>
 
