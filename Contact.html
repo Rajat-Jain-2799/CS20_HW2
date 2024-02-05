@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenStride Solutions | Contact</title>
     <style>
+        html, body {
+            height: 100%; /* Ensure at least full height of viewport */
+            margin: 0; /* Reset default margin */
+            background-color: rgb(43, 202, 54); /* Background color */
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center;
+        }
+        form {
+            width: 100%; /* Make form take full width of its container */
+            max-width: 500px; /* Maximum width of form */
+            margin: 0 auto; /* Center form horizontally */
+            padding: 20px; /* Add some padding around the form */
+            box-sizing: border-box; /* Include padding in width calculation */
+            background-color: #fff; /* Background color for form */
+            border-radius: 8px; /* Rounded corners for form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for form */
+        }
         body { background-color: #e8f5e9; } /* Soft green background */
         .gradient-background { background: linear-gradient(to right, #56CCF2, #2F80ED); } /* Updated gradient */
         .flexbox-centering { display: flex; justify-content: center; align-items: center; height: 100px; }
@@ -15,9 +39,6 @@
             width: auto;
             max-width: 100%;
             max-height: 400px;
-        }
-            body {
-            background-color: rgb(43, 202, 54);
         }
     </style>
 </head>
