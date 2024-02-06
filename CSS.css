@@ -1,49 +1,75 @@
- body {
-            background-color: rgb(43, 202, 54);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #56CCF2;
-            text-align: left;
-            padding: 8px;
-        }
-        th {
-            background-color: #56CCF2;
-            color: black;
-        }
-	tr:nth-child(even) {
-            background-color: #56CCF2;
-        }
-	 .image-style {
-            display: block; /* Makes the image block-level for margin auto to work */
-            margin: auto; /* Centers the image horizontally */
-            width: auto;
-            max-width: 100%;
-            max-height: 400px;
-        }
-	.gradient-background { background: linear-gradient(to right, #56CCF2, #2F80ED); } /* Updated gradient */
-	.hover-effect:hover { transform: scale(1.05); cursor: pointer; }
-	nav ul {
-       		list-style-type: none; /* Remove default list styling */
-       		margin: 0; /* Remove default margin */
-       		padding: 0; /* Remove default padding */
-       		display: inline-block; /* Align the list items in one line */
-     	}
-     
-     	nav ul li {
-       		display: inline; /* Display list items in a line */
-       		margin: 0 10px; /* Add horizontal spacing between links */
-     	}
-     
-     	nav ul li a {
-       		color: #fff; /* Change link color to white or any color you prefer */
-       		text-decoration: none; /* Remove underline from links */
-       		font-size: 16px; /* Adjust font size */
-     	}
-     
-     	.transition {
-      		 transition: color 0.3s ease-in-out; /* Smooth transition for link color */
-     	}
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #e8f5e9;
+    background-image: url('background-img.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-style {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-style {
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.gradient-background { background: linear-gradient(to right, #56CCF2, #2F80ED); }
+
+.flexbox-centering { display: flex; justify-content: center; align-items: center; height: 100px; }
+
+.box-shadow { box-shadow: 0 4px 8px rgba(79, 11, 226, 0.1); }
+
+.text-shadow { text-shadow: 2px 2px 4px #56CCF2; }
+
+.transition { transition: all 0.3s ease-in-out; }
+
+.hover-effect:hover { transform: scale(1.05); cursor: pointer; }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px; /* Adjusted font size for all nav links */
+    transition: color 0.3s ease-in-out;
+}
+
+.header-shadow { box-shadow: 2px 2px 4px #56CCF2; }
+
+.main-style { padding: 20px; }
+
+.image-container {}
