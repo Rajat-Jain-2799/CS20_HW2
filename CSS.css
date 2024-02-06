@@ -57,6 +57,12 @@ main {
     align-items: center;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust based on your layout needs */
+}
 form {
     background-color: white;
     padding: 20px;
