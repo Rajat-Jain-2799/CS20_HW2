@@ -4,103 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenStride Solutions | Contact</title>
-    <style>
-        html, body {
-            height: 100%; /* Ensure at least full height of viewport */
-            margin: 0; /* Reset default margin */
-            background-color: rgb(43, 202, 54); /* Background color */
-            background-image: url('background-img.avif');
-            background-size: cover; /* Ensure the image covers the full background */
-            background-position: center; /* Center the background image */
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-        }
-        main {
-            display: flex;
-            flex-grow: 1;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            text-align: center;
-        }
-        form {
-            width: 100%; /* Make form take full width of its container */
-            max-width: 500px; /* Maximum width of form */
-            margin: 0 auto; /* Center form horizontally */
-            padding: 20px; /* Add some padding around the form */
-            box-sizing: border-box; /* Include padding in width calculation */
-            background-color: #fff; /* Background color for form */
-            border-radius: 8px; /* Rounded corners for form */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for form */
-        }
-         .image-style {
-            display: block; /* Makes the image block-level for margin auto to work */
-            margin: auto; /* Centers the image horizontally */
-            width: auto;
-            max-width: 100%;
-            max-height: 400px;
-        }
-        body { background-color: #e8f5e9; } /* Soft green background */
-        .gradient-background { background: linear-gradient(to right, #56CCF2, #2F80ED); } /* Updated gradient */
-        .flexbox-centering { display: flex; justify-content: center; align-items: center; height: 100px; }
-        .box-shadow { box-shadow: 0 4px 8px rgba(79, 11, 226, 0.1); }
-        .text-shadow { text-shadow: 2px 2px 4px #56CCF2; }
-        .transition { transition: all 0.3s ease-in-out; }
-        .hover-effect:hover { transform: scale(1.05); cursor: pointer; }
-      nav ul {
-       list-style-type: none; /* Remove default list styling */
-       margin: 0; /* Remove default margin */
-       padding: 0; /* Remove default padding */
-       display: inline-block; /* Align the list items in one line */
-     }
-     
-     nav ul li {
-       display: inline; /* Display list items in a line */
-       margin: 0 10px; /* Add horizontal spacing between links */
-     }
-     
-     nav ul li a {
-       color: #fff; /* Change link color to white or any color you prefer */
-       text-decoration: none; /* Remove underline from links */
-       font-size: 16px; /* Adjust font size */
-     }
-     
-     .transition {
-       transition: color 0.3s ease-in-out; /* Smooth transition for link color */
-     }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="gradient-background box-shadow">
     <h1>Welcome to GreenStride Solutions</h1>
     <nav>
         <ul class="hover-effect">
-            <!--Refernces to the other pages on the website-->
-            <li><a style="font-size:26px" href="index.html" class="transition">Home</a></li>
-            <li><a style="font-size:26px" href="service.html" class="transition">Services</a></li>
-            <li><a style="font-size:26px" href="Contact.html" class="transition">Contact</a></li>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="service.html">Services</a></li>
+            <li><a class="nav-link" href="Contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-    <header class="box-shadow">
-        <h1 style="text-shadow:2px 2px 4px #56CCF2;">Contact Us</h1>
-    </header>
-    <main style="padding: 20px;">
-        <section>
-            <form class="transition">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-    </main>
-    <div>
-      <!--Logo of the company in the class style I chose-->
-    <img src="Company-logo2.png" alt="Company Logo" class="image-style box-shadow center">
+<header class="header-shadow">
+    <h1 class="text-shadow">Contact Us</h1>
+</header>
+<main class="main-style">
+    <section>
+        <form class="form-style transition">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+<div class="image-container">
+    <img src="Company-logo2.png" alt="Company Logo" class="image-style box-shadow">
 </div>
 </body>
 </html>
