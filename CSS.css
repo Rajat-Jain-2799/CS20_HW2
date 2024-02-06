@@ -1,6 +1,4 @@
 html, body {
-
-    height: 100%;
     background-color: #e8f5e9; /* Soft green background as fallback */
     background-image: url('background-img.avif'); /* Background image */
     background-size: cover;
