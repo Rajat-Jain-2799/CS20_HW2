@@ -65,6 +65,39 @@
      .transition {
        transition: color 0.3s ease-in-out; /* Smooth transition for link color */
      }
+     #testimonials {
+        background-color: #f0f0f0; /* Light background to distinguish the section */
+        padding: 40px 20px; /* Padding for spacing */
+        text-align: center; /* Center aligning the text */
+    }
+
+   .testimonial-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center; /* Center the testimonials if they are few */
+      gap: 20px; /* Space between testimonials */
+   }
+
+   .testimonial {
+       background-color: #ffffff; /* White background for each testimonial */
+       box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+       border-left: 5px solid #2F80ED; /* Color accent on the side */
+       padding: 20px; /* Padding inside testimonials */
+       max-width: 400px; /* Maximum width for readability */
+       margin: 0 10px; /* Margin for outer spacing */
+  }
+
+    .testimonial p {
+       font-style: italic; /* Italicize the testimonial text */
+    }
+
+    .testimonial cite {
+       display: block; /* Display cite on its own line */
+       margin-top: 10px; /* Space above the citation */
+       font-style: normal; /* Normal font style for citation */
+       font-weight: bold; /* Make citation name bold */
+    }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,6 +123,20 @@
        <!--Refernces to the other pages on the website-->
         <a href="service.html" class="transition">Discover Our Services</a>
     </section>
+ <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+        <blockquote class="testimonial">
+            <p>"GreenStride Solutions has been instrumental in helping our business reduce its carbon footprint and enhance sustainability. Their expertise and dedication are unmatched."</p>
+            <cite>- Alex Johnson, CEO of EcoFriendly Corp</cite>
+        </blockquote>
+        <blockquote class="testimonial">
+            <p>"Thanks to GreenStride Solutions, we've implemented effective renewable energy solutions that have significantly cut our energy costs and supported our environmental goals."</p>
+            <cite>- Samantha Lee, Operations Manager</cite>
+        </blockquote>
+        <!-- Add more testimonials as needed -->
+    </div>
+</section>
 </main>
    <!--A footer to make it seem like a proper business website-->
 <footer>
