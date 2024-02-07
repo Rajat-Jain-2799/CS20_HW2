@@ -25,7 +25,18 @@
         .text-shadow { text-shadow: 2px 2px 4px #dd0505; }
         .gradient-background { background: linear-gradient(to right, #56CCF2, #2F80ED); }
         .transition { transition: all 0.3s ease-in-out; }
-        .hover-effect:hover { transform: scale(1.05); cursor: pointer; }
+        .hover-effect li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .hover-effect li a.transition {
+            transition: color 0.3s ease-in-out; /* Smooth transition for link color */
+        }
+        
+        .hover-effect li a:hover, .hover-effect li a:focus {
+            color: #2F80ED; /* Change color on hover/focus */
+            cursor: pointer;
+        }
         .font-styling { font-family: 'Arial', sans-serif; font-size: 16px; color: #333333; }
         .text-transform { text-transform: uppercase; }
         .overflow-hidden { overflow: hidden; }
