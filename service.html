@@ -46,7 +46,18 @@
             max-height: 400px;
         }
 	.gradient-background { background: linear-gradient(to right, #56CCF2, #2F80ED); } /* Updated gradient */
-	.hover-effect:hover { transform: scale(1.05); cursor: pointer; }
+	.hover-effect li {
+	    display: inline-block;
+	    margin: 0 10px;
+	}
+	.hover-effect li a.transition {
+	    transition: color 0.3s ease-in-out; /* Smooth transition for link color */
+	}
+	
+	.hover-effect li a:hover, .hover-effect li a:focus {
+	    color: #2F80ED; /* Change color on hover/focus */
+	    cursor: pointer;
+	}
 	nav ul {
        		list-style-type: none; /* Remove default list styling */
        		margin: 0; /* Remove default margin */
