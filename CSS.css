@@ -23,6 +23,15 @@ header {
     display: inline-block;
     margin: 0 10px;
 }
+.hover-effect li a.transition {
+    transition: color 0.3s ease-in-out; /* Smooth transition for link color */
+}
+
+.hover-effect li a:hover, .hover-effect li a:focus {
+    color: #2F80ED; /* Change color on hover/focus */
+    cursor: pointer;
+}
+
 
 nav ul {
     list-style: none;
