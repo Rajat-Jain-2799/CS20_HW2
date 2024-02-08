@@ -65,34 +65,26 @@
         margin: 20px; /* Add some margin */
     }
     form {
-        background-color: transparent;
-        padding: 20px;
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-        width: 100%;
-        width: 80%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    input, select, textarea {
-        width: 60%; /* Make input elements larger */
-        padding: 10px; /* Larger padding for input elements */
-        margin: 10px 0; /* Space out elements */
-        border-radius: 4px; /* Rounded borders for input elements */
-        border: 1px solid #ccc; /* Border color */
-        font-size: 16px; /* Larger font size for readability */
-    }
-    .logo-container {
-        text-align: center;
-        margin: 20px 0;
-    }
-    .logo {
-        display: block; /* Makes the image block-level for margin auto to work */
-        margin: auto; /* Centers the image horizontally */
-        width: auto;
-        max-width: 100%; /* Ensures logo width is responsive */
-        max-height: 400px; /* Maximum height for the logo */
-         height: 5vw;
-    
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    width: 80%; /* Adjust according to your layout needs */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    /* If you need specific styling for the logo container, add here */
+    margin-left: 20px; /* Adds space between the form and the logo */
+}
+
+.logo {
+    display: block; /* Makes the image block-level for margin auto to work */
+    margin: auto; /* Centers the image horizontally in its container */
+    width: auto;
+    max-width: 100%; /* Ensures logo width is responsive */
+    max-height: 400px; /* Maximum height for the logo */
+    height: 5vw;
+}
