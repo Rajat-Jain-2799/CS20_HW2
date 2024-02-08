@@ -70,12 +70,12 @@ form {
     width: 100%;
 }
 
-.logo-container {
-    margin-bottom: 50px; /* Adjust gap below logo if necessary */
-}
-
 .logo {
-    max-width: 100%;
-    height: auto;
+            display: block; /* Makes the image block-level for margin auto to work */
+            margin: auto; /* Centers the image horizontally */
+            width: auto;
+            max-width: 100%;
+            max-height: 400px;
+
 }
 
