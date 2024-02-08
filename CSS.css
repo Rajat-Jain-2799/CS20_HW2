@@ -16,6 +16,7 @@
         color: white;
         text-align: center;
         padding: 20px 0;
+        padding: 1vw; /* Use viewport width for padding */
     }
     .nav-link {
         color: white;
@@ -73,6 +74,8 @@
         width: 100%;
         width: 80%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
     input, select, textarea {
         width: 60%; /* Make input elements larger */
@@ -92,4 +95,5 @@
         width: auto;
         max-width: 100%; /* Ensures logo width is responsive */
         max-height: 400px; /* Maximum height for the logo */
+         height: 5vw;
     }
