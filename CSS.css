@@ -76,7 +76,7 @@
 }
 
 .logo-container {
-    /* If you need specific styling for the logo container, add here */
+     text-align: center;
     margin-left: 20px; /* Adds space between the form and the logo */
 }
 
