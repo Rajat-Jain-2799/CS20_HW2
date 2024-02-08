@@ -86,7 +86,7 @@
         font-size: 16px; /* Larger font size for readability */
     }
     .logo-container {
-        text-align: center;
+        text-align: left;
         margin: 20px 0;
     }
     .logo {
