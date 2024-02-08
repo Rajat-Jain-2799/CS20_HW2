@@ -1,37 +1,39 @@
 html, body {
-    background-color: #e8f5e9; /* Soft green background as fallback */
-    background-image: url('background-img.avif'); /* Background image */
+    background-color: #e8f5e9;
+    background-image: url('background-img.avif');
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 header {
-    background: linear-gradient(to right, #56CCF2, #2F80ED); /* Gradient background for header */
+    background: linear-gradient(to right, #56CCF2, #2F80ED);
     color: white;
     text-align: center;
     padding: 20px 0;
 }
+
 .nav-link {
     color: white;
     text-decoration: none;
-    font-size: 26px; /* Adjusted font size for all nav links */
+    font-size: 26px;
 }
 
 .hover-effect li {
     display: inline-block;
     margin: 0 10px;
 }
+
 .hover-effect li a.transition {
-    transition: color 0.3s ease-in-out; /* Smooth transition for link color */
+    transition: color 0.3s ease-in-out;
 }
 
 .hover-effect li a:hover, .hover-effect li a:focus {
-    color: #2F80ED; /* Change color on hover/focus */
+    color: #2F80ED;
     cursor: pointer;
 }
-
 
 nav ul {
     list-style: none;
@@ -51,32 +53,30 @@ nav ul li a {
 }
 
 main {
-    flex-grow: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-top: -20px; /* Close to header */
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust based on your layout needs */
+    width: 80%; /* Make the form container bigger */
+    max-width: 800px; /* Adjusted for a larger form */
+    margin-top: 20px; /* Gap below logo */
 }
+
 form {
-    background-color: transparent;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 40px; /* Larger form */
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    max-width: 500px;
     width: 100%;
-    text-align: center;
 }
 
 .logo-container {
-    text-align: center;
-    margin: 20px 0;
+    margin-bottom: 50px; /* Adjust gap below logo if necessary */
 }
+
 
 .logo {
     max-width: 100%; /* Limit logo size */
