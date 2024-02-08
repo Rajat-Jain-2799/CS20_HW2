@@ -65,8 +65,8 @@ main {
 }
 
 form {
-    background-color: #ffffff;
-    padding: 40px; /* Larger form */
+    background-color: transparent;
+    padding: 60px; /* Larger form */
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     width: 100%;
