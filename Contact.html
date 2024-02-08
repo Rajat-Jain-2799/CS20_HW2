@@ -70,7 +70,7 @@
         margin: 20px; /* Add some margin */
     }
     form {
-        background-color: #ffffff;
+        background-color: transparent;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
@@ -78,8 +78,8 @@
         text-align: center;
     }
     input, select, textarea {
-        width: 90%; /* Make input elements larger */
-        padding: 15px; /* Larger padding for input elements */
+        width: 60%; /* Make input elements larger */
+        padding: 10px; /* Larger padding for input elements */
         margin: 10px 0; /* Space out elements */
         border-radius: 4px; /* Rounded borders for input elements */
         border: 1px solid #ccc; /* Border color */
@@ -90,10 +90,11 @@
         margin: 20px 0;
     }
     .logo {
-        max-width: 100%;
-        max-height: 200px; /* Adjust logo size */
+        display: block; /* Makes the image block-level for margin auto to work */
+        margin: auto; /* Centers the image horizontally */
         width: auto;
-        height: auto;
+        max-width: 100%; /* Ensures logo width is responsive */
+        max-height: 400px; /* Maximum height for the logo */
     }
 </style>
 
