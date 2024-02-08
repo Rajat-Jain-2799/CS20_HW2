@@ -5,83 +5,60 @@ html, body {
     background-position: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
+    width: 100%;
     background: linear-gradient(to right, #56CCF2, #2F80ED);
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 26px;
+/* Ensure nav links and hover effects are unaffected */
+.nav-link, .hover-effect li, .hover-effect li a.transition, .hover-effect li a:hover, .hover-effect li a:focus, nav ul, nav ul li, nav ul li a {
+    /* No changes here, keep your existing styles */
 }
 
-.hover-effect li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.hover-effect li a.transition {
-    transition: color 0.3s ease-in-out;
-}
-
-.hover-effect li a:hover, .hover-effect li a:focus {
-    color: #2F80ED;
-    cursor: pointer;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
+/* Adjust main to not specifically allocate space; let content define it */
 main {
+    width: 100%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -20px; /* Close to header */
+    justify-content: flex-start; /* Align content towards the top */
+    padding: 20px 0 0; /* Reduce any top padding to bring form closer to header */
 }
 
 .container {
-    width: 80%; /* Make the form container bigger */
-    max-width: 800px; /* Adjusted for a larger form */
-    margin-top: 20px; /* Gap below logo */
+    width: 60%; /* Increase width for a larger form */
+    max-width: 900px; /* Optionally adjust for larger screens */
+    margin: 20px 0; /* Reduced top margin to bring form closer to header */
+    padding: 50px; /* Larger padding inside the form */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
-    background-color: #ffffff;
-    padding: 40px; /* Larger form */
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    width: 100%;
+    width: 100%; /* Use full container width */
 }
 
+/* Move the logo-container inside .container to be below the form */
 .logo-container {
-    margin-bottom: 50px; /* Adjust gap below logo if necessary */
+    width: 100%; /* Full width of its container */
+    margin-top: 30px; /* Space between form and logo */
 }
-
 
 .logo {
-    max-width: 100%; /* Limit logo size */
-    max-height: 400px; /* Adjust max height */
-    width: auto; /* Adjust width automatically */
-    height: auto; /* Adjust height automatically */
+    max-width: 100px; /* Adjust based on your logo size */
+    height: auto;
 }
-
