@@ -4,8 +4,10 @@
         height: 100%;
         background-color: #e8f5e9;
         background-image: url('Background.png');
-        background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
+        text-align: center;
         display: flex;
         flex-direction: column;
     }
