@@ -80,11 +80,9 @@
         text-align: center;
     }
     input, select, textarea {
-        width: 40%; /* Make input elements larger */
-        width: 60%; /* Make input elements larger */
+        width: 80%; /* Make input elements larger */
         padding: 10px; /* Larger padding for input elements */
         margin: 10px 0; /* Space out elements */
-        border-radius: 2px; /* Rounded borders for input elements */
         border-radius: 4px; /* Rounded borders for input elements */
         border: 1px solid #ccc; /* Border color */
         font-size: 16px; /* Larger font size for readability */
