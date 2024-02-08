@@ -5,10 +5,11 @@ html, body {
     background-position: center;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh; /* Ensure the body takes up full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 header {
@@ -19,26 +20,20 @@ header {
     padding: 20px 0;
 }
 
-/* Ensure nav links and hover effects are unaffected */
-.nav-link, .hover-effect li, .hover-effect li a.transition, .hover-effect li a:hover, .hover-effect li a:focus, nav ul, nav ul li, nav ul li a {
-    /* No changes here, keep your existing styles */
-}
-
-/* Adjust main to not specifically allocate space; let content define it */
 main {
     width: 100%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align content towards the top */
-    padding: 20px 0 0; /* Reduce any top padding to bring form closer to header */
+    justify-content: center; /* Center content vertically */
+    padding: 0; /* Adjust padding */
 }
 
 .container {
-    width: 60%; /* Increase width for a larger form */
-    max-width: 900px; /* Optionally adjust for larger screens */
-    margin: 20px 0; /* Reduced top margin to bring form closer to header */
+    width: 70%; /* Increase width for a larger form */
+    max-width: 1000px; /* Adjust max width for larger screens */
+    margin: 0; /* Adjust margin to eliminate space above the form */
     padding: 50px; /* Larger padding inside the form */
     background-color: #fff;
     border-radius: 8px;
@@ -52,7 +47,6 @@ form {
     width: 100%; /* Use full container width */
 }
 
-/* Move the logo-container inside .container to be below the form */
 .logo-container {
     width: 100%; /* Full width of its container */
     margin-top: 30px; /* Space between form and logo */
@@ -62,3 +56,41 @@ form {
     max-width: 100px; /* Adjust based on your logo size */
     height: auto;
 }
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 26px; /* Adjusted font size for all nav links */
+}
+
+.hover-effect li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.hover-effect li a.transition {
+    transition: color 0.3s ease-in-out; /* Smooth transition for link color */
+}
+
+.hover-effect li a:hover, .hover-effect li a:focus {
+    color: #2F80ED; /* Change color on hover/focus */
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
